@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWindow</class>
+ <widget class="QMainWindow" name="GameWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>696</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>650</width>
+    <height>840</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TicTacToe</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Start_button">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>590</y>
+      <width>111</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Result_text">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>590</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Select Cell</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Game_level">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>610</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Game_level_label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>590</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Level</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>421</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetFixedSize</enum>
+     </property>
+    </layout>
+   </widget>
+   <widget class="QSpinBox" name="Grid_size">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>610</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="minimum">
+     <number>2</number>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Grid_sizel_label">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>590</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grid Size</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>590</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>User Symbol</string>
+    </property>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>89</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>89</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>O</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>Start_button</zorder>
+   <zorder>Result_text</zorder>
+   <zorder>Game_level</zorder>
+   <zorder>Game_level_label</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>Grid_size</zorder>
+   <zorder>Grid_sizel_label</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
